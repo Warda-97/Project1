@@ -1,0 +1,1058 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/f1b200efe9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dynalight&family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Geist:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kameron:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Narrow:wght@400;700&family=Playwrite+ID:wght@100..400&family=Playwrite+NZ:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&family=Yuyu+Short&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      font-family: "Encode Sans Semi Expanded", sans-serif;
+    }
+    .logo {
+      background: linear-gradient(to right, white, rgb(96, 96, 199), skyblue);
+      -webkit-background-clip: text; /* Chrome, Safari */
+      -webkit-text-fill-color: transparent;
+      height: 60px;
+      display: flex;
+      flex-direction: column;
+      /* font-family: "Story Script", sans-serif; */
+      align-items: center;
+    }
+    nav p {
+      color: white;
+    }
+    nav {
+      background-color: rgb(8, 52, 71);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      height: 63px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      justify-content: center;
+      justify-content: space-around;
+      font-size: medium;
+    }
+    ul {
+      height: 63px;
+      padding-top: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      list-style-type: none;
+    }
+    .fa-cloud {
+      /* color:white; */
+    }
+    a {
+      color: white;
+
+      text-decoration: none;
+    }
+    select {
+      background-color: rgb(8, 52, 71);
+      border: none;
+      color: aliceblue;
+      font-size: medium;
+      padding: 3px;
+      border-radius: 5%;
+    }
+    .moun {
+      width: 100%;
+      height: 500px;
+    }
+    .heighth {
+      height: 550px;
+    }
+
+    .box1 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(5, 108, 152, 0.468);
+      border: none;
+    }
+    .box1 img {
+      width: 100%;
+      height: 200px;
+    }
+    .temps {
+      font-size: small;
+    }
+    .pressure {
+      font-size: small;
+    }
+    .wind {
+      font-size: small;
+    }
+    .box1 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+
+    .box2 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(5, 108, 152, 0.468);
+      border: none;
+    }
+    .box2 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box2 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+
+    .box3 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(5, 108, 152, 0.468);
+      border: none;
+    }
+    .box3 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box3 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+
+    .box4 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(5, 108, 152, 0.468);
+      border: none;
+    }
+    .box4 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box4 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+    .box5 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(5, 108, 152, 0.468);
+      border: none;
+    }
+    .box5 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box5 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+    .box6 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(5, 108, 152, 0.468);
+      border: none;
+    }
+    .box6 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box6 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+
+    #demo1 {
+      height: 450px;
+      width: 100%;
+      margin: 0px;
+
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    #demo1 p {
+      color: black;
+      text-align: start;
+    }
+    #demo2 {
+      height: 450px;
+      width: 100%;
+      margin: 0px;
+
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    #demo2 p {
+      color: black;
+      text-align: start;
+    }
+    .pb {
+      height: 1070px;
+      width: 100%;
+      background-color: rgba(5, 108, 152, 0.468);
+    }
+    .pb h2 {
+      text-align: center;
+      color: aliceblue;
+    }
+    .pb p {
+      text-align: center;
+      color: aliceblue;
+    }
+
+    .box7 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(155, 199, 218, 0.468);
+      border: none;
+    }
+    .box7 img {
+      width: 100%;
+      height: 200px;
+    }
+    /* .temps {
+      font-size: small;
+    }
+    .pressure {
+      font-size: small;
+    }
+    .wind {
+      font-size: small;
+    } */
+    .box7 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+
+    .box8 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(155, 199, 218, 0.468);
+      border: none;
+    }
+    .box8 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box8 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+
+    .box9 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(155, 199, 218, 0.468);
+      border: none;
+    }
+    .box9 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box9 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+
+    .box10 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(155, 199, 218, 0.468);
+      border: none;
+    }
+    .box10 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box10 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+    .box11 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(155, 199, 218, 0.468);
+      border: none;
+    }
+    .box11 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box11 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+    .box12 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(155, 199, 218, 0.468);
+      border: none;
+    }
+    .box12 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box12 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+
+    #demo3 {
+      height: 450px;
+      width: 100%;
+      margin: 0px;
+
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    #demo3 p {
+      color: black;
+      text-align: start;
+    }
+    #demo4 {
+      height: 450px;
+      width: 100%;
+      margin: 0px;
+
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    #demo4 p {
+      color: black;
+      text-align: start;
+    }
+    .sd {
+      height: 1070px;
+      width: 100%;
+      background-color: rgba(155, 199, 218, 0.468);
+    }
+    .sd h2,
+    p {
+      text-align: center;
+      color: rgb(42, 87, 126);
+    }
+
+    .box13 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(5, 108, 152, 0.468);
+      border: none;
+    }
+    .box13 img {
+      width: 100%;
+      height: 200px;
+    }
+    .temps {
+      font-size: small;
+    }
+    .pressure {
+      font-size: small;
+    }
+    .wind {
+      font-size: small;
+    }
+    .box13 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+
+    .box14 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(5, 108, 152, 0.468);
+      border: none;
+    }
+    .box14 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box14 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+
+    .box15 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(5, 108, 152, 0.468);
+      border: none;
+    }
+    .box15 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box15 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+
+    .box16 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(5, 108, 152, 0.468);
+      border: none;
+    }
+    .box16 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box16 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+    .box17 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(5, 108, 152, 0.468);
+      border: none;
+    }
+    .box17 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box17 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+    .box18 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(5, 108, 152, 0.468);
+      border: none;
+    }
+    .box18 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box18 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+
+    #demo5 {
+      height: 450px;
+      width: 100%;
+      margin: 0px;
+
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    #demo5 p {
+      color: black;
+      text-align: start;
+    }
+    #demo6 {
+      height: 450px;
+      width: 100%;
+      margin: 0px;
+
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    #demo6 p {
+      color: black;
+      text-align: start;
+    }
+    .kp {
+      height: 1070px;
+      width: 100%;
+      background-color: rgba(5, 108, 152, 0.468);
+    }
+    .kp h2 {
+      text-align: center;
+      color: aliceblue;
+    }
+    .kp p {
+      text-align: center;
+      color: aliceblue;
+    }
+
+    .box19 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(155, 199, 218, 0.468);
+      border: none;
+    }
+    .box19 img {
+      width: 100%;
+      height: 200px;
+    }
+    /* .temps {
+      font-size: small;
+    }
+    .pressure {
+      font-size: small;
+    }
+    .wind {
+      font-size: small;
+    } */
+    .box19 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+
+    .box20 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(155, 199, 218, 0.468);
+      border: none;
+    }
+    .box20 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box20 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+
+    .box21 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(155, 199, 218, 0.468);
+      border: none;
+    }
+    .box21 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box21 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+
+    .box22 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(155, 199, 218, 0.468);
+      border: none;
+    }
+    .box22 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box22 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+    .box23 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(155, 199, 218, 0.468);
+      border: none;
+    }
+    .box23 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box23 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+    .box24 {
+      height: 400px;
+      width: 27%;
+
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: scroll;
+      padding: 10px;
+      box-shadow: 0px 0px 4px 0px rgba(155, 199, 218, 0.468);
+      border: none;
+    }
+    .box24 img {
+      width: 100%;
+      height: 200px;
+    }
+    .box24 ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      justify-content: start;
+      align-items: start;
+    }
+
+    #demo7 {
+      height: 450px;
+      width: 100%;
+      margin: 0px;
+
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    #demo7 p {
+      color: black;
+      text-align: start;
+    }
+    #demo8 {
+      height: 450px;
+      width: 100%;
+      margin: 0px;
+
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    #demo8 p {
+      color: black;
+      text-align: start;
+    }
+    .ba {
+      height: 1070px;
+      width: 100%;
+      background-color: rgba(145, 222, 255, 0.468);
+    }
+    .ba h2,
+    p {
+      text-align: center;
+      color: rgb(42, 87, 126);
+    }
+
+    #img1 {
+      position: relative;
+    }
+    #img1 h2 {
+      position: absolute;
+      background-color: rgba(207, 207, 241, 0.151);
+      color: aliceblue;
+      border-radius: 20px;
+      box-shadow: 0px 0px 4px 0px rgba(24, 26, 28, 0.231);
+      width: 60%;
+      height: 60px;
+      top: 240px;
+      left: 230px;
+      text-align: center;
+      padding: 10px;
+    }
+    #img2 {
+      position: relative;
+    }
+    #img2 h4 {
+      position: absolute;
+      background-color: rgba(104, 206, 184, 0.215);
+      color: aliceblue;
+      border-radius: 20px;
+      box-shadow: 0px 0px 4px 0px rgba(35, 35, 35, 0.365);
+      width: 60%;
+      height: 60px;
+      top: 240px;
+      left: 230px;
+      text-align: center;
+      padding: 10px;
+    }
+      #img3 {
+      position: relative;
+    }
+    #img3 h5 {
+      position: absolute;
+      background-color: rgba(175, 175, 241, 0.215);
+      color: aliceblue;
+      border-radius: 20px;
+      box-shadow: 0px 0px 4px 0px rgba(24, 26, 28, 0.231);
+      width: 60%;
+      height: 60px;
+      top: 240px;
+      left: 230px;
+      text-align: center;
+      padding: 10px;
+    }
+    #img5 {
+      position: relative;
+    }
+    #img5 h5 {
+      position: absolute;
+      background-color: rgba(175, 175, 241, 0.215);
+      color: aliceblue;
+      border-radius: 20px;
+      box-shadow: 0px 0px 4px 0px rgba(24, 26, 28, 0.231);
+      width: 60%;
+      height: 60px;
+      top: 240px;
+      left: 230px;
+      text-align: center;
+      padding: 10px;
+    }
+    #img4 {
+      position: relative;
+    }
+    #img4 h5 {
+      position: absolute;
+      background-color: rgba(175, 175, 241, 0.215);
+      color: aliceblue;
+      border-radius: 20px;
+      box-shadow: 0px 0px 4px 0px rgba(24, 26, 28, 0.231);
+      width: 60%;
+      height: 60px;
+      top: 240px;
+      left: 230px;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <nav>
+      <h4 class="logo"><i class="fa-solid fa-cloud"></i> Forcast & Outlook</h4>
+      <ul>
+        <li><a href="#pb1">Punjab</a></li>
+        <li><a href="#sd1">Sindth</a></li>
+        <li><a href="#kp1">Khayber Pakhtunkhwa</a></li>
+        <li><a href="#ba1">Balochistan</a></li>
+      </ul>
+      <select>
+        <option value="">Cities</option>
+        <option value="">Faisalabad</option>
+        <option value="">Lahore</option>
+        <option value="">Karachi</option>
+        <option value="">Multan</option>
+        <option value="">Hyderabad</option>
+        <option value="">Sukkur</option>
+      </select>
+
+      <p><a href="login.html">Login</a> / <a href="signup.html">Signup</a></p>
+    </nav>
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="' carousel-inner">
+        <div class="carousel-item active" id="img1">
+          <img
+            src="https://4kwallpapers.com/images/wallpapers/himalayas-mountain-peak-clouds-mountains-cold-daylight-5k-4872x3248-1183.jpg"
+            class="d-block w-100 heighth"
+          />
+          <h2>
+            <i class="fa-regular fa-handshake"></i> Welcome to Pakistan's
+            Weather Portal
+          </h2>
+        </div>
+        <div class="carousel-item" id="img2">
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/037/280/992/small_2x/ai-generated-green-mountains-and-sunbeams-in-sunlit-day-mountain-free-photo.jpeg"
+            class="d-block w-100 heighth"
+          />
+          <h4>🍃 Discover live weather updates, right where you are.</h4>
+        </div>
+        <div class="carousel-item" id="img4">
+          <img
+            src="https://wallpapercave.com/wp/wp4711666.jpg"
+            class="d-block w-100 heighth"
+          /><h5>🌨️ Feel the breeze, see the skies, Pakistan's weather at a glance.</h5>
+        </div>
+        <div class="carousel-item" id="img3">
+          <img
+            src="https://wallup.net/wp-content/uploads/2019/09/642735-pakistan-sunset-sky-clouds-orange-beauty-nature-ground-landscape-rivers.jpg"
+            class="d-block w-100 heighth"
+          />  <h5>Stay connected with real time forecasts across Punjab, Sindh, KP, and Balochistan.</h5>
+        </div>
+        <div class="carousel-item" id="img5">
+          <img
+            src="https://media.cntraveler.com/photos/647fa4126702ed16faad7365/16:9/w_2560%2Cc_limit/Iconic%2520Rocky%2520Mountain%2520National%2520Park%2520Hikes_joe-dudeck-xqkGRlF7Uqg-unsplash.jpg"
+            class="d-block w-100 heighth"
+          /><h5>Track the winds 🌬️, rains 🌧️, and sunshine across Pakistan's provinces in one place.</h5>
+        
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <div class="pb">
+      <br />
+      <h2 id="pb1">Punjab</h2>
+      <p>
+        <br />
+        Punjab province of Pakistan is home to millions of people and some of<br />
+        its most famous cities include Lahore, Faisalabad, Rawalpindi,
+        <br />
+        Multan, Sialkot and Bahawalpur.
+      </p>
+      <div id="demo1"></div>
+      <div id="demo2"></div>
+    </div>
+
+    <div class="sd">
+      <br />
+      <h2 id="sd1">Sindth</h2>
+      <p>
+        <br />
+        Sindh, the vibrant province of Pakistan, embraces iconic cities such
+        as<br />
+        Karachi, Hyderabad, and Larkana, each carrying its own story.
+      </p>
+      <div id="demo3"></div>
+      <div id="demo4"></div>
+    </div>
+
+    <div class="kp">
+      <br />
+      <h2 id="kp1">Khyber Pakhtunkhwa</h2>
+      <p>
+        <br />
+        Khyber Pakhtunkhwa province of Pakistan is known for its scenic
+        beauty<br />
+        and vibrant culture, with famous cities like Peshawar, Mardan,<br />
+        Abbottabad, Swat, Kohat, and Dera Ismail Khan.
+      </p>
+      <div id="demo5"></div>
+      <div id="demo6"></div>
+    </div>
+
+    <div class="ba">
+      <br />
+      <h2 id="ba1">Balochistan</h2>
+      <p>
+        <br />
+        Balochistan province of Pakistan, the largest by area, includes
+        renowned<br />
+        cities such as Quetta, Khuzdar, Gwadar, Turbat, Sibi, and Chaman.
+      </p>
+      <div id="demo7"></div>
+      <div id="demo8"></div>
+    </div>
+    <script src="WeatherApi.js"></script>
+  </body>
+</html>

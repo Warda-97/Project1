@@ -1,0 +1,104 @@
+console.log("Weather Web")
+let k=ad20a0dd305442488104cc255431a546
+let data=fetch('https://api.openweathermap.org/data/2.5/weather?lat={34.0901}&lon={-118.4065}&appid={ad20a0dd305442488104cc255431a546}')
+.then(post=>post.json())
+.then(card =>{ card.articles.map(function(data){
+document.getElementById('demo').innerHTML+= `
+
+<div class="inner">
+  <img src="${data.zip}" alt="" />
+  <h2>${data.name}</h2>
+  <p><b>Description:${data.lat}</b></p>
+  <p><b>Content:</b>${data.long}</p>
+  <a href="${data.country}">
+    <button>Learn More</button>
+  </a>
+</div>
+
+` }) })
+
+
+
+
+fetch(url)
+  .then(response =>response.json())
+  .then(post => {
+    document.write(data);
+   document.write(`Temperature: ${post.main.temp}°C`);
+    document.write(`Weather: ${post.weather[0].description}`);
+  })
+  .catch(error => console.error("Error fetching weather:", error));
+
+
+
+
+  
+
+
+let url = `https://api.openweathermap.org/data/2.5/weather?q=Pakistan&appid=ad20a0dd305442488104cc255431a546`;
+let data=fetch(url)
+.then(post=>post.json())
+.then(card =>{ 
+  // card.weather.map(function(data){
+
+document.getElementById('demo').innerHTML+= `
+ <div class="inner">
+        <h2>Country ${card.sys.country}</h2>
+         <h2>Country ${card.sys.sunset}</h2>
+          <h2>Country ${card.sys.sunrise}</h2>
+           <h2>Country ${card.name}</h2>
+            <h2>Country ${card.timezone}</h2>
+             <h2>Country ${JSON.stringify(card.sys)}</h2>
+     
+      </div>
+
+`
+//  }
+// ) 
+})
+// <h2>Sunrise${data.weather[0].sunrise}"<h2>
+//    <p><b>Temperature:</b> ${data.main.temp} °C</p>
+        // <p><b>Max Temp:</b> ${data.main.temp_max} °C</p>
+        // <p><b>Pressure:</b> ${data.main.pressure} hPa</p>
+        // <p><b>Weather:</b> ${data.weather[0].description}</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+let url = `https://api.openweathermap.org/data/2.5/weather?q=Pakistan&appid=ad20a0dd305442488104cc255431a546`;
+let data=fetch(url)
+.then(post=>post.json())
+.then(card =>{ 
+document.getElementById('demo').innerHTML+= `
+ <div class="inner">
+        <h2>Country ${card.sys.country}</h2>
+         <h2>Country ${card.sys.sunset}</h2>
+          <h2>Country ${card.sys.sunrise}</h2>
+           <h2>Country ${card.name}</h2>
+            <h2>Country ${card.timezone}</h2>
+             <h2>Country ${JSON.stringify(card.sys)}</h2>
+     
+      </div>
+
+`
+})
+

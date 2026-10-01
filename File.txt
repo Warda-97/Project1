@@ -1,0 +1,21 @@
+  <h2>Country ${JSON.stringify(card.sys)}</h2>
+  Full Object
+  <h2>Country ${card.sys.sunrise}</h2>
+  Single property of Object
+
+
+
+
+
+
+
+
+
+
+            <li>Temperature: $((card.main.temp)-273.15)°𝐶</li>
+            <li>Maximun temperature: $(card.main.temp-max-273.15)°𝐶</li>
+            <li>Minimum temperature: $(card.main.temp-min-273.15)°𝐶</li>
+            <li>Moisture in the air$(card.main.humidity)</li>
+            <li>Air pressure at sea level$(card.main.pressure)hPa</li>
+            <li>Pressure measured at sea level$(card.main.sea-level)hPa</li>
+            <li>Pressure measured at ground level$(card.main.grnd-level)hPa</li>
